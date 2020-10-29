@@ -8,6 +8,8 @@ urlpatterns = [
     path('cart', views.cart, name='cart'),
     path('checkout', views.checkout, name='checkout'),
     path('detail', views.detail, name='detail'),  # пока что один на всех 
+
+    path('update_item/', views.updateItem, name='update_item')
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
